@@ -16,7 +16,7 @@ widget1:
 widget2:
   title: "Meet Dimit Chadha"
   url: '/info/'
-  text: '<em>TOGA Certified</em> Solution Architect.
+  text: '<em>TOGAF Certified</em> Solution Architect.
   <ul class="inline-list social-icons">
   <li><a href="http://twitter.com/javapathshala" target="_blank" class="icon-twitter" title="twitter"></a></li>
   <li><a href="http://facebook.com/pathshalajava" target="_blank" class="icon-facebook" title="facebook"></a></li>
