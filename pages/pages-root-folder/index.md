@@ -22,7 +22,7 @@ widget2:
   <li><a href="http://facebook.com/pathshalajava" target="_blank" class="icon-facebook" title="facebook"></a></li>
   <li><a href="http://linkedin.com/in/dimitchadha" target="_blank" class="icon-linkedin" title="linkedin"></a></li>
   </ul>'  
-  image: bio2.png
+  image: bio2.PNG
 widget3:
   title: "Interviews-Afraid ?"
   url: '/interviews/'
