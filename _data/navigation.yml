@@ -2,17 +2,6 @@
   url: "/"
   side: left
 
-- title: About
-  url: "/about"
-  side: left
-  dropdown:
-  - title: "Terms of Use"
-    url: "/termsofuse/"
-  - title: "Privacy Policy"
-    url: "/privacypolicy/"
-  - title: "Disclaimer"
-    url: "/disclaimer/"
-
 - title: "TOGAF"
   url: "/togaf"
   side: left
@@ -49,6 +38,17 @@
   dropdown:
   - title: "Blog Archive"
     url: "/blog/archive/"
+
+- title: About
+  url: "/about"
+  side: left
+  dropdown:
+    - title: "Terms of Use"
+      url: "/termsofuse/"
+    - title: "Privacy Policy"
+      url: "/privacypolicy/"
+    - title: "Disclaimer"
+      url: "/disclaimer/"
 
 - title: "Search"
   url: "/search/"
