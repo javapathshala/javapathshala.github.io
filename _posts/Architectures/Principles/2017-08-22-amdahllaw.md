@@ -6,7 +6,7 @@ comments: true
 title: "Amdahl’s Law"
 categories:
           - Architectures
-          - Principles-
+          - Principles
 ---
 
 - Is used to find the maximum expected improvement to an overall system when only part of the system is improved. It is often used in parallel computing to predict the theoretical maximum speed up using multiple processors.

@@ -7,7 +7,7 @@ title: "Single Responsibility"
 teaser: "A class should have one & only one reason for change. Responsibility here is reason for change. If there are two reasons for a change in a class, then there is a need to split class functionality into two."
 categories:
           - Architectures
-          - Principles-
+          - Principles
 ---
 
 Each class will handle only one responsibility. The Single Responsibility Principle is a simple and intuitive principle, but in practice it is sometimes hard to get it right. Relate the <em>“reason to change”</em> to <em>“the responsibility of the class”</em>.
