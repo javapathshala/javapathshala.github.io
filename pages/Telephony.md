@@ -6,7 +6,7 @@ title: "All Telephony Wisdoms!"
 subheadline: ""
 teaser: "Check out all blog posts in <em>Telephony</em>. Click on a headline to read the teaser."
 header:
-   image_fullwidth: "header_unsplash_5.jpg"
+   image_fullwidth: "cam.jpg"
 permalink: "/Telephony/"
 ---
 <div id="blog-index" class="row">

@@ -6,7 +6,7 @@ title: "All Core Java Wisdoms!"
 subheadline: ""
 teaser: "Check out all blog posts for <em>Web Services</em>. Click on a headline to read the teaser."
 header:
-   image_fullwidth: "header_unsplash_5.jpg"
+   image_fullwidth: "cam.jpg"
 permalink: "/Core-Java/"
 ---
 <div id="blog-index" class="row">

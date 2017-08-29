@@ -4,7 +4,7 @@ show_meta: true
 title: "All Archiets Wisdoms!"
 subheadline: "Layouts of Feeling Responsive"
 header:
-   image_fullwidth: "header_unsplash_5.jpg"
+   image_fullwidth: "cam.jpg"
 permalink: "/Architects/"
 ---
 <ul>
