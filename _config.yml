@@ -1,0 +1,164 @@
+# Title of your website
+title: 'Java Pathshala'
+
+# The slogan describes your website and is used on homepage in <title> and other important places
+slogan: 'Wisdom Being Shared'
+
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
+description: 'Java Pathshala is an unique blog with a different perspective to a subject. Also provides TOGAF references & tricks.'
+
+# The credits show up in the includes/_footer.html
+credits: Java Pathshala &copy;2017
+
+# Main author of the website
+# See > authors.yml
+author: Dimit Chadha
+
+# This URL is the main address for absolute links. Don't include a slash at the end.
+url: 'https://www.javapathshala.com'
+baseurl:
+
+# This URL points directly to the images directory making
+# things easier to link to images in posts and templates. It needs a slash at the end.
+#
+# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+#
+urlimg: '/images/'
+
+
+# Logo size is 600x80 pixels
+logo: "logo.png"
+
+# Gems
+gems:
+    - jekyll-asciidoc
+    - jekyll-gist
+    - jekyll-paginate
+
+
+# Pagintion
+paginate: 5                      # Paginates all X entries
+paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
+
+# Theme works best with Kramdown (using the table of contents function)
+markdown: kramdown
+permalink: /:categories/:title/
+highlight: rouge
+excerpt_separator: "<!--more-->"
+include: ['.htaccess']
+# Exclude these files from your production _site
+exclude:
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+
+# The language setting is used in /includes/header.html for html-settings
+language: 'en'
+
+# Used › default.html front-matter and compress.html
+# Options › http://jch.penibelst.de
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  profile: false
+  ignore:
+    envs: [development]
+
+# Default Settings
+defaults:
+  -
+    scope:
+      path: '' 				# an empty string here means all files in the project
+      type: 'pages'
+    values:
+      show_meta: false 	# Hide metadata for all pages
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: dc     # Default author for pages
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      show_meta: true   # Show metadata for all posts
+      # sidebar:        # Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: dc     # Default author for posts
+
+# Navigation
+#  Open _data/navigation.yml to adjust the left and right topbar navigation
+
+# SEO Settings - Verify website to webmaster tools
+google_author:             'https://plus.google.com/u/0/107240470756447645941'
+#google_site_verification:  ''
+#bing_webmastertools_id:    ''
+# yandex_site_verification:  ''
+# alexa_verify_id:           ''
+
+# Favicon
+
+favicon-32x32:                          'favicon-32x32.png'
+touch-icon-192x192:                     'touch-icon-192x192.png'
+apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
+apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
+apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
+apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
+apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
+apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
+apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
+apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
+msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
+msapplication_tilecolor:                '#fabb00'
+
+
+#Facebook-Optimization › http://j.mp/fb_optimize
+og_locale:                          'en_EN'
+og_type:                            'website'
+
+
+#  Open _data/socialmedia.yml to adjust the left and right topbar navigation
+socialmedia:
+    twitter: javapathshala
+    facebook: pathshalajava
+
+# used in _includes/comments
+disqus_shortname: javapathshala
+
+# http://sass-lang.com/
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+# https://www.google.com/analytics/
+# used in _includes/footer_scripts
+google_analytics_tracking_id: UA-31424787-1
+
+#  tawk.to is a free live chat app that lets you monitor and chat
+#  with visitors on your website or from a free customizable page
+# https://www.tawk.to/knowledgebase/
+#  To load the script add tawkto: true in front matter of each page
+#
+# used in _includes/footer_scripts
+
+# tawkto_embed_uri:
+
+
+
+#  Asciidoctor is a fast text processor and publishing toolchain for converting
+#  AsciiDoc content to HTML5, DocBook 5 (or 4.5) and other formats.
+#
+#  https://github.com/asciidoctor/jekyll-asciidoc
+#  https://github.com/asciidoctor
+#
+asciidoctor-enabled: false
+asciidoctor:
+  description: testtewtetrue
+  attributes:
+    source-highlighter: coderay
+    coderay-css: style
+    icons: font

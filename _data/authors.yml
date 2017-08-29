@@ -1,0 +1,14 @@
+# Author details
+#
+# 1. Edit information below
+# 2. Change site author in config.yml
+# 3. Change default post/page authors in config.yml
+#
+dc: # replace this with your info
+  name: "Dimit Chadha"
+  siterole: "webmaster, developer, copywriter, designer"
+  uri: http://www.linkedin.com/in/dimitchadha
+  email: java.pathshala@gmai.com
+  twitter: "@javapathshala"
+  facebook: pathshalajava
+# you can add more authors here

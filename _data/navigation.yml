@@ -1,0 +1,59 @@
+- title: Home
+  url: "/"
+  side: left
+
+- title: About
+  url: "/about"
+  side: left
+  dropdown:
+  - title: "Terms of Use"
+    url: "/termsofuse/"
+  - title: "Privacy Policy"
+    url: "/privacypolicy/"
+  - title: "Disclaimer"
+    url: "/disclaimer/"
+
+- title: "TOGAF"
+  url: "/togaf"
+  side: left
+  dropdown:
+  - title: "How to Prepare"
+    url: "/howtoprepare/"
+  - title: "Mocks Part 1"
+    url: "/togafmock1/"
+  - title: "Mocks Part 2"
+    url: "/togafmock2/"
+
+- title: "Interviews"
+  url: "/interviews"
+  side: left
+  dropdown:
+  - title: "Core Java"
+    url: "/corejava/"
+  - title: "Spring"
+    url: "/spring/"
+  - title: "Hibernate"
+    url: "/hibernate/"
+  - title: "Web Services"
+    url: "/webservices/"
+  - title: "SOA"
+    url: "/soa/"
+
+- title: White Papers
+  url: "/whitepapers/"
+  side: left
+
+- title: Blog
+  url: "/blog/"
+  side: left
+  dropdown:
+  - title: "Blog Archive"
+    url: "/blog/archive/"
+
+- title: "Search"
+  url: "/search/"
+  side: right
+
+- title: "Contact"
+  url: "/contact/"
+  side: right

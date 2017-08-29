@@ -1,0 +1,19 @@
+- name: Facebook
+  url: http://www.facebook.com/pathshalajava
+  class: icon-facebook
+  title: "Facebook"
+
+- name: Twitter
+  url: http://twitter.com/javapathshala
+  class: icon-twitter
+  title: "Java Pathshala,Wisdom Being Shared"
+
+- name: Google+
+  url: https://plus.google.com/u/0/107240470756447645941
+  class: icon-googleplus
+  title: "Google+"
+
+- name: Linkedin
+  url: http://www.linkedin.com/in/dimitchadha
+  class: icon-linkedin
+  title: "Linkedin"

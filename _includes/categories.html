@@ -1,0 +1,10 @@
+{% capture site_categories %}{% for categories in site.categories %}{{ categories | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign categories_words = site_categories | split:',' | sort %}
+<div id="categories">
+ <!-- <ul class="categories-box inline"> -->
+ {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+   {% capture this_word %}{{ categories_words[item] | strip_newlines }}{% endcapture %}
+   <!-- <li><a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a></li> -->
+   &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ this_word }}&nbsp;</a>
+ {% endunless %}{% endfor %}
+</div>
