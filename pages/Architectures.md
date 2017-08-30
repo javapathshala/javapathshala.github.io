@@ -7,7 +7,7 @@ subheadline: ""
 teaser: "Check out all blog posts for <em>Web Services</em>. Click on a headline to read the teaser."
 header:
    image_fullwidth: "cam.jpg"
-permalink: "/Architectures/"
+permalink: "/architectures/"
 ---
 <div id="blog-index" class="row">
 	<div class="small-12 columns t30">
