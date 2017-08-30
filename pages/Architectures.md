@@ -13,7 +13,7 @@ permalink: "/architectures/"
 	<div class="small-12 columns t30">
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
-			{% for post in site.categories.Architectures limit:1000 %}
+			{% for post in site.categories.architectures limit:1000 %}
 			<dd class="accordion-navigation">
 			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">
