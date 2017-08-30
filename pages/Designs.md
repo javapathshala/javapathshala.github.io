@@ -4,7 +4,7 @@ breadcrumb: true
 sidebar: right
 title: "All Design Principles Wisdoms!"
 subheadline: ""
-teaser: "Check out all blog posts for <em>Web Services</em>. Click on a headline to read the teaser."
+teaser: "Check out all blog posts for <em>Designs</em>. Click on a headline to read the teaser."
 header:
    image_fullwidth: "cam.jpg"
 permalink: "/Architectures/Designs/"
@@ -13,7 +13,7 @@ permalink: "/Architectures/Designs/"
 	<div class="small-12 columns t30">
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
-			{% for post in site.categories.Designs limit:1000 %}
+			{% for post in site.categories.designs limit:1000 %}
 			<dd class="accordion-navigation">
 			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">

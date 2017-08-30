@@ -7,13 +7,13 @@ subheadline: ""
 teaser: "Check out all blog posts in <em>Telephony</em>. Click on a headline to read the teaser."
 header:
    image_fullwidth: "cam.jpg"
-permalink: "/Telephony/"
+permalink: "/telephony/"
 ---
 <div id="blog-index" class="row">
 	<div class="small-12 columns t30">
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
-			{% for post in site.categories.Telephony limit:1000 %}
+			{% for post in site.categories.telephony limit:1000 %}
 			<dd class="accordion-navigation">
 			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">
