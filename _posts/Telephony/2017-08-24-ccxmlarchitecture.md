@@ -6,9 +6,9 @@ comments: true
 title: "CCXML Applications"
 teaser: It consists of a collection of CCXML documents that control and manage objects
 tags:
-    - Telephony
+    - telephony
 categories:
-    - Telephony
+    - telephony
 ---
 
 - It consists of a collection of CCXML documents that control and manage objects

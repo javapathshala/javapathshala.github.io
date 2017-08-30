@@ -6,7 +6,7 @@ comments: true
 title: "Domain Driven Design"
 teaser: " Domain-driven way of building software should appeal to everyone – after all that software is being built for the benefit of that domain, not for the benefit of architects, developers or QAs."
 categories:
-          - Designs
+          - designs
 ---
 
 - Domain-driven way of building software should appeal to everyone – after all that software is being built for the benefit of that domain, not for the benefit of architects, developers or QAs.

@@ -6,8 +6,8 @@ comments: true
 title: "Thread Locals"
 teaser: "Another way to achieve thread-safety apart from writing immutable classes"
 categories:
-          - Core-Java
-          - Concurrency
+          - core-java
+          - concurrency
 ---
 * ThreadLocal in Java is another way to achieve thread-safety apart from writing immutable classes. In multi-threaded applications there is a cost of synchronization or locking which greatly affects scalability of application, but there is no choice other than synchronize if you are sharing objects between multiple threads.
 * ThreadLocal in Java is a different way to achieve thread-safety but doesn't address synchronization requirement, instead it eliminates sharing by providing explicitly copy of object to each thread. Since Object is no more shared there is no requirement of synchronization which can improve scalability and performance of application. Associated with thread scope only.

@@ -6,7 +6,7 @@ comments: true
 title: "Web Services Features"
 teaser: "Prime features of Web Services."
 categories:
-    - Web-Services
+    - web-services
 ---
 
 * Statelessness

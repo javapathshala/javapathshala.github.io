@@ -6,7 +6,7 @@ comments: true
 title: "SOAP Vs REST"
 teaser: "Both implementation are good in thier own sense. Choose as per business senerioas"
 categories:
-          - Web-Services
+          - web-services
 ---
 <em>REST works really well for:</em>
 * Limited bandwidth and resources; remember the return structure is really in any format (developer defined). Plus, any browser can be used because the REST approach uses the standard GET, PUT, POST, and DELETE verbs.

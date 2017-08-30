@@ -6,7 +6,7 @@ comments: true
 title: "Call REST Web Service using Shell Script"
 teaser: "Yes ! It's true. You can invoke or consume or call a Web Service from inside a Linux/Unix shell script. This is same as doing from java or php or .net client. Actually most simple to call or invoke a web service is through shell scripting."
 categories:
-    - Web-Services
+    - web-services
 ---
 Let's consider a REST web service that adds two numbers. Also you need to pass a token (string or numeric) as a parameter (consider this as a example - do not think over it as a functionality )
 

@@ -6,8 +6,8 @@ comments: true
 title: "Out Of Memory (OEM)"
 teaser: "Various tools for find OEMs"
 categories:
-          - Core-Java
-          - Concurrency
+          - core-java
+          - concurrency
 ---
 
 ## Visualgc

@@ -6,7 +6,7 @@ comments: true
 title: "Interface Vs Abstract Class"
 teaser: "Co-Brothers with different nature."
 categories:
-          - Core-Java
+          - core-java
 ---
 * Interfaces provide a form of multiple inheritances. A class can extend only one other class.
 * Interfaces are limited to public methods and constants with no implementation. Abstract classes can have a partial implementation, protected parts, static methods, etc.

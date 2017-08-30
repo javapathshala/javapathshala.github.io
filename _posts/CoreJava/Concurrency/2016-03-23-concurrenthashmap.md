@@ -6,8 +6,8 @@ comments: true
 title: "Concurrent Hash Map"
 teaser: "Superior brother of HashMap"
 categories:
-          - Core-Java
-          - Concurrency
+          - core-java
+          - concurrency
 ---
 * ConcurrentHashMap allows concurrent read and thread-safe update operation.
 * During update operation, ConcurrentHashMap only lock a portion of Map (only bucket) instead of whole Map.

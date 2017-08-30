@@ -6,8 +6,8 @@ comments: true
 title: "Cap Theorem"
 teaser: "Fundamentals of CAP Theorem"
 categories:
-          - Architectures
-          - Principles
+          - architectures
+          - principles
 ---
 
 * CAP theorem is becoming known due to the increase hype around No-SQL database.

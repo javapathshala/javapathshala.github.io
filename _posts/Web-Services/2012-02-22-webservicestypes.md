@@ -8,7 +8,7 @@ teaser: "There are 3 types of Web-services types or you can say transport mechan
 tags:
     #- Web-services
 categories:
-    - Web-Services
+    - web-services
 ---
 
 ### SOAP
