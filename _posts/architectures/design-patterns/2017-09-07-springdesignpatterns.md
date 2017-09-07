@@ -6,7 +6,7 @@ comments: true
 title: "Spring Design Patterns"
 teaser: " Design Patterns used by Spring framework "
 categories:
-          - designs-patterns
+          - design-patterns
 ---
 -	Dependency injection/ or IOC (inversion of control) – Is the main principle behind decoupling process.
 -	Factory – Spring uses factory pattern to create objects of beans using Application Context reference.
