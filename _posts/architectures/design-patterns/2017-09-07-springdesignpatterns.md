@@ -6,6 +6,7 @@ comments: true
 title: "Spring Design Patterns"
 teaser: " Design Patterns used by Spring framework "
 categories:
+          - architectures
           - design-patterns
 ---
 -	Dependency injection/ or IOC (inversion of control) – Is the main principle behind decoupling process.
