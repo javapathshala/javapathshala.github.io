@@ -1,6 +1,6 @@
 ---
 layout: page
-sidebar: right
+sidebar: left
 breadcrumb: true
 comments: true
 title: "Java API Design Patterns"
