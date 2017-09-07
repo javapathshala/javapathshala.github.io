@@ -2,7 +2,7 @@
 layout: page
 breadcrumb: true
 sidebar: right
-title: "All Design Principles Wisdoms!"
+title: "All Design Patterns Wisdoms!"
 subheadline: ""
 teaser: "Check out all blog posts for <em>Design Patterns</em>. Click on a headline to read the teaser."
 header:
