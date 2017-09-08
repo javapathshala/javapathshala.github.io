@@ -1,13 +1,18 @@
 ---
 layout: page
-sidebar: right
+header:
+    image_fullwidth: "cam.jpg"
 breadcrumb: true
-comments: true
+sidebar: right
 title: "Spring Design Patterns"
-teaser: " Design Patterns used by Spring framework "
+teaser: "Design Patterns are used every where, be it any framework. Spring framework uses many Java design patterns - Singleton, Factory , MVC & many more"
+image:
+    thumb:  homepage_patterns-thumb.jpg
+comments: true
 categories:
           - architectures
           - design-patterns
+
 ---
 -	Dependency injection/ or IOC (inversion of control) – Is the main principle behind decoupling process.
 -	Factory – Spring uses factory pattern to create objects of beans using Application Context reference.

@@ -32,8 +32,6 @@ format: frontpage
 
 </div><!-- /.row -->
 
-
-
 {% comment %}
 *
 * First check, if there is a call for action-button
@@ -51,8 +49,6 @@ format: frontpage
         </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
 {% endif %}
-
-
 
 {% comment %}
 *
@@ -75,16 +71,15 @@ format: frontpage
             </p>
             {% endif %}
             {% else post.image.homepage == NULL %}
-            <h2>{{ site.data.language.new_blog_entries }}</h2>
+            <h3>{{ site.data.language.new_blog_entries }}</h3>
             {% endif %}
             {% endfor %}
         </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
 
-
     <div class="row">
         <div class="medium-6 columns">
-            {% for post in site.posts limit:1 %}
+            {% for post in site.posts limit:2 %}
             {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
             <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <p>
@@ -94,14 +89,12 @@ format: frontpage
             {% endfor %}
         </div><!-- /.medium-5.columns -->
 
-
         <div class="medium-6 columns">
             <p><strong>{{ site.data.language.more_articles }}</strong></p>
-            {% include list-posts entries='3' offset='1' %}
+            {% include list-posts entries='5' offset='2' %}
         </div><!-- /.medium-7.columns -->
     </div><!-- /.row -->
 {% endunless %}
-
 
 {% comment %}
 *

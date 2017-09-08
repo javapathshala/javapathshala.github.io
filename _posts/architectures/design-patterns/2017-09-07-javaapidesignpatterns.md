@@ -1,10 +1,14 @@
 ---
 layout: page
+header:
+    image_fullwidth: "cam.jpg"
 sidebar: left
 breadcrumb: true
 comments: true
 title: "Java API Design Patterns"
-teaser: " Design Patterns used by Java API "
+teaser: "Design Patterns are used every where, be it any framework. Java API itself uses its own design patterns - Singleton, Factory , Command, Observer & many more"
+image:
+    thumb:  homepage_patterns-thumb.jpg
 categories:
           - architectures
           - design-patterns
