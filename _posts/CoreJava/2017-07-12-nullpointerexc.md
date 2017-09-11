@@ -17,14 +17,16 @@ Make your code 100 % error free.
 
 ##### Usage of EQUALS Method
 Consider the sample code
-<pre>if (status.equalsIgnoreCase("In-Progress"))</pre>
+{% highlight java %}
+if (status.equalsIgnoreCase("In-Progress"))
+{% endhighlight %}
 
 This statement looks pretty good & error free but actually it is most common mistake we all do & most dangerous statement in java.
 This will throw a NULL POINTER exception if values of status is NULL as NULL cannot invoke equalIgnoreCase().
 
 <em>Remedy:</em>
 Change the statement to:
-<pre>if ("In-Progress".equalsIgnoreCase(status)) </pre>
+{% highlight java %}if ("In-Progress".equalsIgnoreCase(status)) {% endhighlight %}
 
 In this case, first attribute is of type String [In-Progress is string], so it is capable to invoking equalignoreCase(). Now even if status is NULL, code will work fine as String value can be compared to NULL or Not Null values.
 
@@ -32,45 +34,45 @@ So this small tweak will make your code happy!
 
 ##### EMPTY or NULL Collection
 There is huge difference between EMPTY & NULL collections e.g. List, Map etc. Empty List is a list that does not contain any elements i.e. LIST.size is 0. Null List is a list that has all elements NULL. So never initialise LIST to Null as
-<pre>List list = null; return list;</pre>
+{% highlight java %}List list = null; return list;{% endhighlight %}
 but instead do
-<pre>List list = Collections.EMPTY_LIST; return list;</pre>
+{% highlight java %}List list = Collections.EMPTY_LIST; return list;{% endhighlight %}
 Same way for other collection type, we have Collections.EMPTY_MAP
 
 ##### Treat Null Pointer Gracefully
 
 Neither throw or throws Null Pointer exception.  This also states true for the fact that Null Pointer exception is an unchecked exception also. There are much better ways to handle potential null pointer exceptions.
 So do not handle exception in below way :
-<pre>
+{% highlight java %}
 try {
       System.out.println(userDTO.getUserId());
     }
 catch (NullPointerException npe)
 {  //write your code here }
-</pre>
+{% endhighlight %}
 If your business logic allows userDTO == null then follow the below approach:
-<pre>
+{% highlight java %}
 if (userDTO != null) {
   System.out.println(userDTO.getUserId());
 }
 else {
 //Other business logic codes here.
 }
-</pre>
+{% endhighlight %}
 
 ##### Hierarchical Invoking of methods
 This coding practise is also one of the potential causes of exception. We generally call methods hierarchically in a single statement like:
-<pre>
+{% highlight java %}
 String value = (String)((service.getSession("key"))
                       .getAttribute("sessionattributename"));
-</pre>
+{% endhighlight %}
 Above statement can throw null pointer exception if service.getSession(“key”) is null , so there is need to refractor the code as
-<pre>
+{% highlight java %}
 Session sessionObject= service.getSession("key");
 if(sessionObject!=null){
   String value=sessionObject.getAttribute(“sessionattributename”);
 }
-</pre>
+{% endhighlight %}
 
 ##### Using Third-party Classes.
 As Java is growing fast & lots of open source libraries available in market , consider this as a rapid development technique.

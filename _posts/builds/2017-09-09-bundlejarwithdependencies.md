@@ -22,7 +22,7 @@ Shadow Plugin provides flexiabilty to even exclude jar files from final deployab
 
 Paste the below code in <build> <plugins> selection
 
-{% highlight scss %}
+{% highlight xml %}
 <!-- Maven Shade Plugin -->
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
