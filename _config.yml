@@ -155,7 +155,7 @@ google_analytics_tracking_id: UA-31424787-1
 #  https://github.com/asciidoctor/jekyll-asciidoc
 #  https://github.com/asciidoctor
 #
-asciidoctor-enabled: false
+asciidoctor-enabled: true
 asciidoctor:
   description: testtewtetrue
   attributes:

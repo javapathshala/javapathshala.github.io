@@ -9,6 +9,7 @@
 #
 {% endcomment %}{% capture ignore %}
 
+
 {% assign url = site.baseurl | prepend: site.url %}
 
 {% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
@@ -89,3 +90,11 @@
 	{% unless page.style == NULL %}
 	<style type="text/css">{{ page.style }}</style>
 	{% endunless %}
+
+	<!--metadata -->
+	{% if page.summary %}
+<meta name="description" content="{{ page.summary | escape }}">
+{% endif %}
+{%if page.tags %}
+<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+{%endif %}
