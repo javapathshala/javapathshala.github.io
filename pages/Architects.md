@@ -2,7 +2,7 @@
 layout: page
 show_meta: true
 title: "All Archiets Wisdoms!"
-subheadline: "Layouts of Feeling Responsive"
+subheadline: "Layouts of Java Pathshala"
 header:
    image_fullwidth: "cam.jpg"
 permalink: "/Architects/"
