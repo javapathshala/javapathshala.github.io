@@ -7,6 +7,7 @@ title: "Null Pointer Exception – Blasphemy!"
 teaser: "Treat Java as Human. He can accept & comprise on any type of exceptions but “NULL POINTER EXCEPITON” is a SIN."
 categories:
           - core-java
+related: true
 ---
 You might have written extremely excellent business logic, algorithms, followed coding guidelines etc. but if code is prone to NULL POINTER exception, it is not worthwhile having the code.
 

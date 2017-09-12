@@ -5,6 +5,8 @@ breadcrumb: true
 comments: true
 title: "Defensive Copies"
 teaser: "The simplest way to avoid problems with concurrency is to share only immutable data between threads. Immutable data is data which cannot changed"
+image:
+    thumb:  copies-thumb.jpg
 categories:
           - core-java
           - concurrency
