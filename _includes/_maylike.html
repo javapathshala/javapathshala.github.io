@@ -9,11 +9,9 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-  <div class="table grid-rows">
-    <div class="small-12 columns b60">
-      <h6><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ title }}</a></h6>
+    <td>
+      <p><h7><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ title }}</a></h7></p>
       <p>
         {% if post.image.thumb %}<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape_once }}"><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="150" height="150" alt="{{ page.title escape_once }}"></a>{% endif %}
       </p>
-    </div><!-- /.small-12.columns -->
-  </div><!-- /.row -->
+    </td>
