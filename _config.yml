@@ -14,6 +14,8 @@ credits: Java Pathshala &copy;2017
 # See > authors.yml
 author: Dimit Chadha
 
+words_per_minute: 200
+
 # This URL is the main address for absolute links. Don't include a slash at the end.
 url: 'http://www.javapathshala.com'
 baseurl:
@@ -89,6 +91,7 @@ defaults:
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       author: dc     # Default author for posts
+      read_time: true
 
 # Navigation
 #  Open _data/navigation.yml to adjust the left and right topbar navigation

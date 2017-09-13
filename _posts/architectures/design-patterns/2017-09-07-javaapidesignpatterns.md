@@ -12,6 +12,7 @@ image:
 categories:
           - architectures
           - design-patterns
+read_time: true
 ---
 -	java.lang.Runtime: In every Java application there is only one Runtime instance that allows the application to interface with the environment it is running. The getRuntime is equivalent to the getInstance() method of the singleton class.
 -	The Model-View-Controller design pattern is used extensively throughout the Swing API.
