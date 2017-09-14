@@ -13,6 +13,9 @@
           {% when 'concurrency' or 'collections' %}
               {% assign new_cat = 'core-java/' | append:this_word %}
               &nbsp;&nbsp;<a href="/{{ new_cat }}">{{ this_word }}&nbsp;</a>
+          {% when 'maven' %}
+              {% assign new_cat = 'builds/' | append:this_word %}
+              &nbsp;&nbsp;<a href="/{{ new_cat }}">{{ this_word }}&nbsp;</a>
           {% else %}
               &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ this_word }}&nbsp;</a>
       {% endcase %}

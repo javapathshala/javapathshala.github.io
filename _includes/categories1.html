@@ -1,0 +1,39 @@
+<!-- {% capture site_categories %}{% for categories in site.categories %}{{ categories | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+{% assign categories_words = site_categories | split:',' | sort %}
+<div id="categories">
+ {% for item in (0..site.categories.size) %}
+    {% unless forloop.last %}
+      {% capture this_word %}{{ categories_words[item] | strip_newlines }}{% endcapture %}
+      {% if this_word contains 'design-patterns' %}
+        {% assign new_cat = this_word | join:/architectures %}
+      {% if this_word contains '/' %}
+          {% assign aa = this_word | split:"/" %}
+          {% assign new_cat = aa | last %}
+          &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ new_cat }}&nbsp;</a>
+      {% else %}
+          &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ this_word }}&nbsp;</a>
+      {% endif %}
+    {% endunless %}
+{% endfor %}
+</div> -->
+
+{% capture site_categories %}{% for categories in site.categories %}{{ categories | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+{% assign categories_words = site_categories | split:',' | sort %}
+<div id="categories">
+ {% for item in (0..site.categories.size) %}
+    {% unless forloop.last %}
+      {% capture this_word %}{{ categories_words[item] | strip_newlines }}{% endcapture %}
+      {% if this_word contains 'design-patterns' or this_word contains 'designs' or this_word contains 'principles' %}
+          {% assign new_cat = 'architectures/' | append:this_word %}
+          &nbsp;&nbsp;<a href="/{{ new_cat }}">{{ this_word }}&nbsp;</a>
+      {% elsif this_word contains 'concurrency' or  this_word contains 'collections' %}
+          {% assign new_cat = 'core-java/' | append:this_word %}
+          &nbsp;&nbsp;<a href="/{{ new_cat }}">{{ this_word }}&nbsp;</a>
+      {% else %}
+          &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ this_word }}&nbsp;</a>
+      {% endif %}
+    {% endunless %}
+{% endfor %}
+</div>
