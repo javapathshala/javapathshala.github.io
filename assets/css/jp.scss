@@ -6,13 +6,18 @@ sitemap:
 @charset "utf-8";
 
 @import "functions.scss";
+@import "variables.scss";
+@import "buttons.scss";
+@import "utilities.scss";
 @import "01_settings_colors.scss";
 @import "02_settings_typography.scss";
 @import "03_settings_mixins_media_queries.scss";
 @import "04_settings_global.scss";
 @import "05_normalize.scss"; // normalize.css v3.0.2
 
+@import "foundation-components/variables";
 @import "foundation-components/top-bar";
+@import "foundation-components/icons";
 @import "foundation-components/accordion";
 @import "foundation-components/alert-boxes";
 @import "foundation-components/breadcrumbs";
