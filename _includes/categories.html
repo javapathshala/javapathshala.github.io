@@ -1,10 +1,21 @@
 {% capture site_categories %}{% for categories in site.categories %}{{ categories | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
 {% assign categories_words = site_categories | split:',' | sort %}
 <div id="categories">
- <!-- <ul class="categories-box inline"> -->
- {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-   {% capture this_word %}{{ categories_words[item] | strip_newlines }}{% endcapture %}
-   <!-- <li><a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a></li> -->
-   &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ this_word }}&nbsp;</a>
- {% endunless %}{% endfor %}
+ {% for item in (0..site.categories.size) %}
+    {% unless forloop.last %}
+      {% capture this_word %}{{ categories_words[item] | strip_newlines }}{% endcapture %}
+
+      {% case this_word %}
+          {% when 'design-patterns' or 'designs' or 'principles' %}
+              {% assign new_cat = 'architectures/' | append:this_word %}
+              &nbsp;&nbsp;<a href="/{{ new_cat }}">{{ this_word }}&nbsp;</a>
+          {% when 'concurrency' or 'collections' %}
+              {% assign new_cat = 'core-java/' | append:this_word %}
+              &nbsp;&nbsp;<a href="/{{ new_cat }}">{{ this_word }}&nbsp;</a>
+          {% else %}
+              &nbsp;&nbsp;<a href="/{{ this_word | cgi_escape }}">{{ this_word }}&nbsp;</a>
+      {% endcase %}
+    {% endunless %}
+{% endfor %}
 </div>
