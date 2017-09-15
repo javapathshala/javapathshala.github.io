@@ -15,7 +15,6 @@ format: frontpage
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-<!-- few posts-->
 
 <div class="row">
 	<div class="medium-8 columns t30">
@@ -26,15 +25,10 @@ format: frontpage
       <a class="button tiny radius" href="{{ site.url }}{{ site.baseurl }}/blog">{{ site.data.language.more }}</a>
     </p>
 	</div><!-- /.medium-7.columns -->
-
-
 	<div class="medium-4 columns t30">
 		{% include _homesidebar.html %}
 	</div><!-- /.medium-5.columns -->
 </div>
-
-
-
 
 <div class="row t60">
 	{% if page.widget1.title %}
@@ -58,7 +52,7 @@ format: frontpage
 * First check, if there is a call for action-button
 *
 {% endcomment %}
-{% if page.callforaction.url contains 'http' %}
+<!-- {% if page.callforaction.url contains 'http' %}
 {% assign url = '' %}
 {% else %}
 {% capture url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
@@ -67,9 +61,9 @@ format: frontpage
     <div class="row t60 b60">
         <div class="small-12 text-center columns">
             <a class="button large radius {{ page.callforaction.style }}" href="{{ url }}{{ page.callforaction.url }}"{% if page.callforaction.url contains 'http' %} target="_blank" {% endif %}>{{ page.callforaction.text }}</a>
-        </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-{% endif %}
+        </div>
+    </div>
+{% endif %} -->
 
 {% comment %}
 *
@@ -77,7 +71,7 @@ format: frontpage
 *
 {% endcomment %}
 
-{% unless site.posts == empty %}
+<!-- {% unless site.posts == empty %}
     <div class="row t30 b20 homepage">
         <div class="small-12 columns">
             {% for post in site.posts limit:1 %}
@@ -95,8 +89,8 @@ format: frontpage
             <h3>{{ site.data.language.new_blog_entries }}</h3>
             {% endif %}
             {% endfor %}
-        </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
+        </div>
+    </div>
 
     <div class="row">
         <div class="medium-6 columns">
@@ -108,13 +102,13 @@ format: frontpage
                 <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
             </p>
             {% endfor %}
-        </div><!-- /.medium-5.columns -->
+        </div>
 
         <div class="medium-6 columns">
             <p><strong>{{ site.data.language.more_articles }}</strong></p>
             {% include list-posts entries='5' offset='2' %}
-        </div><!-- /.medium-7.columns -->
-    </div><!-- /.row -->
+        </div>
+    </div> -->
 {% endunless %}
 
 {% comment %}
