@@ -15,6 +15,27 @@ format: frontpage
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
+<!-- few posts-->
+
+<div class="row">
+	<div class="medium-8 columns t30">
+    {% for post in site.categories.core-java limit:3 %}
+      {% include  _categoriesposts.html %}
+    {% endfor %}
+    <p>
+      <a class="button tiny radius" href="{{ site.url }}{{ site.baseurl }}/blog">{{ site.data.language.more }}</a>
+    </p>
+	</div><!-- /.medium-7.columns -->
+
+
+	<div class="medium-4 columns t30">
+		{% include _homesidebar.html %}
+	</div><!-- /.medium-5.columns -->
+</div>
+
+
+
+
 <div class="row t60">
 	{% if page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
