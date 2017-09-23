@@ -18,9 +18,14 @@ format: frontpage
 
 <div class="row">
 	<div class="medium-8 columns t30">
-    {% for post in site.categories.core-java limit:3 %}
+    {% for post in site.categories.tomcat limit:3 %}
       {% include  _categoriesposts.html %}
     {% endfor %}
+
+    {% for post in site.categories.security limit:3 %}
+      {% include  _categoriesposts.html %}
+    {% endfor %}
+
     <p>
       <a class="button tiny radius" href="{{ site.url }}{{ site.baseurl }}/blog">{{ site.data.language.more }}</a>
     </p>
