@@ -6,7 +6,7 @@ comments: true
 title: "TimeZone Aware Tomcat!"
 teaser: "Run Tomcat with timezone of your choice"
 image:
-    thumb:  tomcat-thumb.jpg
+    thumb:  tomcattime-thumb.jpg
 categories:
           - tomcat
 tags:
