@@ -1,11 +1,11 @@
-<!--section class="page__share">
+<section class="page__share">
   {% if site.data.ui-text[site.locale].share_on_label %}
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
   <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="smGlobalBtn" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
   <a href="https://plus.google.com/share?url={{ page.url | absolute_url | url_encode }}" class="btn btn--google-plus" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
@@ -15,12 +15,4 @@
 	        title="Share via Email" class="btn btn--email" >
 	        <i class="fa fa-envelope share-button"> email</i>
 	    </a>
-</section-->
-
-<div id="social">
-  <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/pathshalajava" ></a>
-  <a class="twitterBtn smGlobalBtn" href="https://twitter.com/{{site.twitter.username}}" ></a>
-  <a class="googleplusBtn smGlobalBtn" href="https://plus.google.com/share?url={{ page.url | absolute_url | url_encode }}" ></a>
-  <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" ></a>
-  <a class="rssBtn smGlobalBtn" href="{{site.url}}/feed.xml" ></a>
-</div>
+</section>
