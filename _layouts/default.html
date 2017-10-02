@@ -5,13 +5,6 @@ layout: compress
 <html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
 <head>
 	{% include _head.html %}
-	<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2892350754252994",
-    enable_page_level_ads: true
-  });
-</script> -->
 </head>
 <body id="top-of-page" class="{{ layout.format }}">
 	{% unless page.skip_boilerplate %}
@@ -26,10 +19,6 @@ layout: compress
 	{% endunless %}
 
 	{% include _footer_scripts.html %}
-	<script>
-  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
-    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
-  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/30104/script.js');
-</script>
+	{% include _subscribe_popup.html %}
 </body>
 </html>
