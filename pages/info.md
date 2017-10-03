@@ -10,9 +10,14 @@ header:
 ---
 ...and learn at the same time.
 
-Solution Architect with several years of experience in architecture and framework development in financial vertical handling clients of Multi-geography covering UK, US & Latin world. As a technical Architect,  I have great experience in executing greenfield projects & build technical teams for project execution.  I also provide technical leadership and oversight for many application development projects. Have handy experience in lettering technical project proposals for prospective clients.
 
+<div class="row">
+    <div class="medium-8 columns t30">
+      <img src="{{ site.urlimg }}bio.png" alt="Dimit Chadha">
+    </div>
+</div>
 <br/>
+Solution Architect with several years of experience in architecture and framework development in financial vertical handling clients of Multi-geography covering UK, US & Latin world. As a technical Architect,  I have great experience in executing greenfield projects & build technical teams for project execution.  I also provide technical leadership and oversight for many application development projects. Have handy experience in lettering technical project proposals for prospective clients.
 
 <ul class="inline-list social-icons">
 {% for social_item in site.data.socialmedia %}

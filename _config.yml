@@ -5,10 +5,10 @@ title: 'Java Pathshala'
 slogan: 'Wisdom Being Shared'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: 'Java Pathshala is an unique blog with a different perspective to a subject. Also provides TOGAF references & tricks.'
+description: 'Java Pathshala is an unique blog by Dimit Chadha - different perspective to a subject. Also provides TOGAF references & tricks.'
 
 # The credits show up in the includes/_footer.html
-credits: Java Pathshala &copy;2017
+credits: Java Pathshala &copy;2017 by Dimit Chadha
 
 # Main author of the website
 # See > authors.yml
@@ -142,8 +142,8 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person # Person or Organization (defaults to Person)
+  name                   : Dimit Chadha # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # http://sass-lang.com/

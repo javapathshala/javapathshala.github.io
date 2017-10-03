@@ -43,6 +43,8 @@
   url: "/about"
   side: left
   dropdown:
+    - title: "About Author"
+      url: "/info/"
     - title: "Terms of Use"
       url: "/termsofuse/"
     - title: "Privacy Policy"

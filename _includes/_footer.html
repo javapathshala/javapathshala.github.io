@@ -62,7 +62,7 @@
       <div id="subfooter">
         <nav class="row">
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            {{ site.name | default: site.title }}  &copy; {{ site.time | date: '%Y' }}
+            {{ site.name | default: site.title }}  &copy; {{ site.time | date: '%Y' }} by <a href="/info">{{site.author}}</a>
             <br/>
             {% include dmca.html %}
             {% include creativecommon.html %}
