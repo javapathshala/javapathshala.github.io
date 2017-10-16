@@ -17,3 +17,15 @@ from information_schema.table_constraints
 where
 constraint_schema = '<your db schema>'
 {% endhighlight %}
+
+{% highlight sql %}
+SELECT CONSTRAINT_NAME,
+       UNIQUE_CONSTRAINT_NAME,
+       MATCH_OPTION,
+       UPDATE_RULE,
+       DELETE_RULE,
+       TABLE_NAME,
+       REFERENCED_TABLE_NAME
+FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS
+WHERE CONSTRAINT_SCHEMA = '<your db schema>'
+{% endhighlight %}
