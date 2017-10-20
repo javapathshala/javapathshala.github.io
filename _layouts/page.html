@@ -31,6 +31,8 @@ format: post
 			{% if page.teaser %}
 			<p class="teaser" itemprop="description">
 				{{ page.teaser }}
+				<br/>
+				{% include adv/amazonbanner.html %}
 			</p>
 			{% endif %}
 
@@ -44,9 +46,13 @@ format: post
 			{% endif %}
 
 			{% include page__related.html %}
+			<br/>
+			{% include adv/amazonfullbanner.html %}
 
 			{% if page.comments == true %}
 			{% include _comments.html %}
+
+
 			{% endif %}
 
 		</article>
