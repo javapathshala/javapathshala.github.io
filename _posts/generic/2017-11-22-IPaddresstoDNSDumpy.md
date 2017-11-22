@@ -4,36 +4,26 @@ sidebar: right
 breadcrumb: true
 comments: true
 title: "Web Application -How to Map IP to DNS for Testing"
-teaser: "Website or Blog on Jekyll ? It's awesome, user friendly, clean & easy to use."
+teaser: "This post describes how to host a web application with domain name but only on team access (not for outside world - you need to buy a domain name for that)."
 categories:
-          - jekyll
+          - generic
 tags:
-          - Jekyll
-          - ruby
-          - static website generator
+          - generic
+          - Web Application
 ---
--	Download latest ruby installer for windows - rubyinstaller-2.4.2-2-x64.ex <em>https://rubyinstaller.org/downloads/</em>
--	Run the application executable & install in C:\Ruby24-x64
--	Now we will update ruby with gems required for jekyll
--	Open command prompt & navigate to installation directory of ruby  - C:\Ruby24-x64\bin.Make sure you are connected to Internet as below commands download required gems from gems repository.
-  -	Run the following commands to update gems
-{% highlight ruby %}
-gem install jekyll bundler
+
+Normally whenever we build web applicatios using any agreeded technology stack , we endup in access url like <em>http://<server ip/hostname>:portnumber/myapp</em>. If you have many applications hosting on different servers ,it's difficult to remember IP or hostname for that server. 
+
+Work around is to have dummy or fake Domain name (not registered with any registar) e.g.  http://<server ip/hostname>:portnumber/myapp changes to http://www.myapp.com/myapp
+
+To make it happen we would simply modify  hosts file, which is essentially a list of IP/hostname associations which any DNS lookup will check first.
+
+Host file is located at different locations in different OS. For windows it resides in <em>c:/windows/system32/drivers/etc/</em> folder . Make sure you open host file (hosts) in admin mode to save changes.
+
+In hosts file find the entry for localhost and add an entry as shown below
+{% highlight java %}
+127.0.0.1       www.myapp.com
 {% endhighlight %}
 
-- create  a new jekyll site as
-{% highlight ruby %}
-jekyll  new mynewsite
-{% endhighlight %}
+All set, access your application as http://www.myapp.com/myapp
 
-- Bundle newly created website
-{% highlight ruby %}
-cd mynewsite
-bundle exec jekyll  serve
-{% endhighlight %}
-
--	You can access – http://localhost:4000
--	4000 is default port but site can be mapped to another port as –
-{% highlight ruby %}
-bundle exec jekyll serve --port 4001
-{% endhighlight %}
