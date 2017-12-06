@@ -12,7 +12,7 @@ tags:
           - Web Application
 ---
 
-Normally whenever we build web applicatios using any agreeded technology stack , we endup in access url like <em>http://<server ip/hostname>:portnumber/myapp</em>. If you have many applications hosting on different servers ,it's difficult to remember IP or hostname for that server. 
+Normally whenever we build web applications using any agreed technology stack , we endup in access url like <em>http://<server ip/hostname>:portnumber/myapp</em>. If you have many applications hosting on different servers ,it's difficult to remember IP or hostname for that server. 
 
 Work around is to have dummy or fake Domain name (not registered with any registar) e.g.  http://<server ip/hostname>:portnumber/myapp changes to http://www.myapp.com/myapp
 
@@ -26,4 +26,3 @@ In hosts file find the entry for localhost and add an entry as shown below
 {% endhighlight %}
 
 All set, access your application as http://www.myapp.com/myapp
-
