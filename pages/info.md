@@ -19,7 +19,6 @@ header:
 <br/>
 Solution Architect with several years of experience in architecture and framework development in financial vertical handling clients of Multi-geography covering UK, US & Latin world. As a technical Architect,  I have great experience in executing greenfield projects & build technical teams for project execution.  I also provide technical leadership and oversight for many application development projects. Have handy experience in lettering technical project proposals for prospective clients.
 
-<a href="http://new.gem.gov.in">Test </a>
 
 <ul class="inline-list social-icons">
 {% for social_item in site.data.socialmedia %}
