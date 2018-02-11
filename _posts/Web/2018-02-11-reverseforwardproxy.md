@@ -6,7 +6,7 @@ comments: true
 title: "Difference Between Forward & Reverse Proxy"
 teaser: "Two co-brothers doing different works. Both doing opposite works"
 categories:
-          - Web
+          - web
 tags:
           - Web
           - Apache Web Server
