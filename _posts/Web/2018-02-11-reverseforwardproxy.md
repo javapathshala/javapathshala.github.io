@@ -28,8 +28,7 @@ tags:
 
 <em>Examples - Reverse Proxy</em>
 
-{% highlight apacheconf %}
-# Redirection to https
+{% highlight aconf %}
 <VirtualHost *:80>
      ServerName javapathshala.com
      ServerAlias javapathshala.com
@@ -54,5 +53,33 @@ tags:
 
     ProxyPass / http://xxx.xxx.x.xx/
     ProxyPassReverse / http://xxx.xxx.x.xx/
+</VirtualHost>
+{% endhighlight %}
+
+<em>Examples - Reverse Proxy</em>
+{% highlight aconf %}
+<VirtualHost *:8080>
+  # Enable forward proxy
+  ProxyRequests On
+  # Add "Via" header
+  ProxyVia On
+  #ProxyRemote * http://...:8080 Uncomment to route requests through another proxy
+<Proxy *>
+  Order deny,allow
+  Deny from all
+  # Allow access only from local network
+  Allow from 192.168.1
+</Proxy>
+
+# Enable caching proxy
+CacheRoot "/tmp"
+CacheMaxExpire 24
+CacheLastModifiedFactor 0.1
+CacheDefaultExpire 1
+
+ServerName my-proxy
+
+ErrorLog "/var/log/httpd/proxy-error.log"
+CustomLog "/var/log/httpd/proxy-access.log" common
 </VirtualHost>
 {% endhighlight %}
