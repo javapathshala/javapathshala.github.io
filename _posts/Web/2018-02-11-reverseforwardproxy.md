@@ -28,32 +28,31 @@ tags:
 
 <em>Examples - Reverse Proxy</em>
 
-<pre><code class="language-apacheconf">
+{% highlight apacheconf %}
 # Redirection to https
 <VirtualHost *:80>
-       ServerName javapathshala.com
-       ServerAlias javapathshala.com
-       Redirect / https://javapathshala.com/
+     ServerName javapathshala.com
+     ServerAlias javapathshala.com
+     Redirect / https://javapathshala.com/
 </VirtualHost>
 
 <VirtualHost *:443>
-ProxyTimeout 500
-ProxyPreserveHost On
-ProxyVia On
+    ProxyTimeout 500
+    ProxyPreserveHost On
+    ProxyVia On
 
-ServerName javapathshala.com
-     ServerAlias javapathshala.com
+    ServerName javapathshala.com
+    ServerAlias javapathshala.com
 
-  	 SSLEngine on
-     SSLCertificateFile /etc/pki/tls/private/jp.crt
-     SSLCertificateKeyFile /etc/pki/tls/private/jp.key
-     SSLCACertificateFile /etc/pki/tls/private/rootjp.cer
+    SSLEngine on
+    SSLCertificateFile /etc/pki/tls/private/jp.crt
+    SSLCertificateKeyFile /etc/pki/tls/private/jp.key
+    SSLCACertificateFile /etc/pki/tls/private/rootjp.cer
 
-	   ErrorLog /var/log/httpd/jp-site-error_log
-     TransferLog /var/log/httpd/jp-site-access_log
+    ErrorLog /var/log/httpd/jp-site-error_log
+    TransferLog /var/log/httpd/jp-site-access_log
 
-	    ProxyPass / http://xxx.xxx.x.xx/
-	     ProxyPassReverse / http://xxx.xxx.x.xx/
+    ProxyPass / http://xxx.xxx.x.xx/
+    ProxyPassReverse / http://xxx.xxx.x.xx/
 </VirtualHost>
-</code>
-</pre>
+{% endhighlight %}
