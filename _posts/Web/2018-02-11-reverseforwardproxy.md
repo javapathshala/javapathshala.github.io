@@ -28,7 +28,7 @@ tags:
 
 <em>Examples - Reverse Proxy</em>
 
-{% highlight apacheconf %}
+<pre><code class="language-apacheconf">
 # Redirection to https
 <VirtualHost *:80>
        ServerName javapathshala.com
@@ -37,11 +37,11 @@ tags:
 </VirtualHost>
 
 <VirtualHost *:443>
-	ProxyTimeout 500
-	ProxyPreserveHost On
-	ProxyVia On
+ProxyTimeout 500
+ProxyPreserveHost On
+ProxyVia On
 
-     ServerName javapathshala.com
+ServerName javapathshala.com
      ServerAlias javapathshala.com
 
   	 SSLEngine on
@@ -52,27 +52,8 @@ tags:
 	   ErrorLog /var/log/httpd/jp-site-error_log
      TransferLog /var/log/httpd/jp-site-access_log
 
-	ProxyPass / http://xxx.xxx.x.xx/
-	ProxyPassReverse / http://xxx.xxx.x.xx/
+	    ProxyPass / http://xxx.xxx.x.xx/
+	     ProxyPassReverse / http://xxx.xxx.x.xx/
 </VirtualHost>
-
-
-
-{% endhighlight %}
-
-- create  a new jekyll site as
-{% highlight ruby %}
-jekyll  new mynewsite
-{% endhighlight %}
-
-- Bundle newly created website
-{% highlight ruby %}
-cd mynewsite
-bundle exec jekyll  serve
-{% endhighlight %}
-
--	You can access – http://localhost:4000
--	4000 is default port but site can be mapped to another port as –
-{% highlight ruby %}
-bundle exec jekyll serve --port 4001
-{% endhighlight %}
+</code>
+</pre>
