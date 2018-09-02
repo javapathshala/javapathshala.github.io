@@ -8,7 +8,7 @@ image:
 title: "Docker!"
 teaser: "How to Install Docker on Ubuntu Machine"
 categories:
-          - Docker
+          - docker
 tags:
           - Docker
           - frameworks
