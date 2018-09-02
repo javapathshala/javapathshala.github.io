@@ -4,7 +4,7 @@ sidebar: right
 breadcrumb: true
 comments: true
 image:
-    thumb:  elk-thumb.jpg
+    thumb:  docker-thumb.jpg
 title: "Docker!"
 teaser: "How to Install Docker on Ubuntu Machine"
 categories:
