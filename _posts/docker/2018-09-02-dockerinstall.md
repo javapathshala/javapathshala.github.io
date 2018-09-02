@@ -5,7 +5,7 @@ breadcrumb: true
 comments: true
 image:
     thumb:  docker-thumb.jpg
-title: "Docker!"
+title: "How to Install Docker on Ubuntu Machine!"
 teaser: "How to Install Docker on Ubuntu Machine"
 categories:
           - docker
