@@ -32,6 +32,10 @@
   url: "/whitepapers/"
   side: left
 
+- title: Micro-Services
+  url: "/microservices/"
+  side: left
+
 - title: Blog
   url: "/blog/"
   side: left
